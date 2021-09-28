@@ -42,6 +42,14 @@ def calculate_sphere_area(d):
   return np.pi * d * d
 
 
+def fix_r2(r2, t):
+  return r2 + t / 2
+
+
+def calculate_ring_area(r1, r2c):
+  return 2 * np.pi * (r2c * r2c - r1 * r1)
+
+
 def calculate_convection_thermal_resistance(h, area):
   return 1 / (h * area)
 
