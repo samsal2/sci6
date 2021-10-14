@@ -8,7 +8,7 @@ u = 9e-4
 p = 1e3
 k_conexion = 0.4
 n_conexion_1 = 30
-n_conexion_2 = 30
+n_conexion_2 = 23
 g = 9.80665
 
 def calc_psi_1(flow, l, d):
