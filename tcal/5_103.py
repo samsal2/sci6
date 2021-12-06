@@ -124,17 +124,18 @@ def animate(dt):
     im.set_data(create_plot_data(ti))
     # cm.set_array(create_plot_data(ti).flatten())
 
-  ani = animation.FuncAnimation(fig, fn, np.arange(0, 100),
+  ani = animation.FuncAnimation(fig, fn, np.arange(0, 500),
                                 interval=20, blit=False)
 
-  # ani.save("anim.gif")
+  writer = animation.FFMpegWriter(fps=60)
+  ani.save("anim.mp4", writer=writer)
 
   plt.show()
 
 
 def main():
   print(iterate(2 * 60, 160, gauss_seidel.solve))
-  animate(5)
+  animate(1)
 
 
 if __name__ == "__main__":

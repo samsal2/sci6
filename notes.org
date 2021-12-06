@@ -1,0 +1,6 @@
+* Intercamiadores
+** Delta T ln
+*** Nunca utilizar paralelos, malo
+*** Si no es tubos concentricos, utilizar correción
+**** Coraza
+**** Flujo cruzado

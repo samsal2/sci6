@@ -3,15 +3,15 @@ from scipy.optimize import fsolve
 from impl import calc_chen, calc_re
 import matplotlib.pyplot as plt
 
-#Datos 
+#Datos
 
 g = 9.81
-p = 999.96 # kg/m3
+p = 999.96  # kg/m3
 t = 15 # ˚C
 P_A = 0
 P_C = 1 * 101325 # atm man
 P_B = 2 * 101325 # atm man
-vis = 1.129 / 1000 # cP
+vis = 1.129 / 1000 # cp
 e = 4.572e-5 
 codo_45 = 0.35
 codo_90 = 0.75
@@ -24,7 +24,6 @@ L_A_x = 3 + 1 + 150
 ca_problema = [0, 2.2, 4.5, 6.8, 9, 11.5, 13.6, 15.9, 18, 20.5, 22.7]
 cb_problema = [55, 54, 53, 51.5, 49, 45, 42, 39, 35, 32, 27.5]
 ef_problema = [0, 13, 23.5, 31.6, 37.5, 42.2, 44, 41.5, 39, 37, 31]
-
 
 # Cedula 40
 ced_40_d_2 = 2.067 * 0.0254 # m
